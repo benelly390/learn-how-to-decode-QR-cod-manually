@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #111;
+  background: #f7f7f7;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0 0 8px;
+}
+
+.hud,
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.panel,
+.decode-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.hint {
+  color: #0a59c7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 34px);
+  gap: 2px;
+  width: fit-content;
+  background: #d9d9d9;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.cell {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #b7b7b7;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.dark {
+  background: #222;
+  color: #fff;
+}
+
+.light {
+  background: #fff;
+}
+
+.selected {
+  outline: 3px solid #3cb371;
+  z-index: 1;
+}
+
+.guide {
+  box-shadow: inset 0 0 0 2px #7aa7ff;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 8px 10px;
+}
+
+input {
+  margin-right: 8px;
+  padding: 8px;
+}
+
+.message {
+  font-weight: 600;
+}
