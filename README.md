@@ -1,0 +1,1 @@
+# learn-how-to-decode-QR-cod-manually
