@@ -16,14 +16,52 @@ A simple browser-based educational game built with React to teach the core ideas
 - Clean, simple visual style
 - No backend (fully front-end only)
 
-## Run locally
+## Run locally (step-by-step)
+
+### 1) Prerequisites
+
+- **Node.js 18+** (recommended: latest LTS)
+- **npm 9+** (comes with Node in most installs)
+
+Check what you have installed:
+
+```bash
+node -v
+npm -v
+```
+
+### 2) Install dependencies
+
+From the project root:
 
 ```bash
 npm install
+```
+
+### 3) Start the development server
+
+```bash
 npm start
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Expected output includes a line like:
+
+- `Local: http://localhost:3000`
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 4) Stop the server
+
+Press `Ctrl + C` in the terminal running `npm start`.
+
+### Common issues
+
+- **`react-scripts: command not found`**  
+  Run `npm install` again in the project root so local dependencies are installed.
+- **Port 3000 is already in use**  
+  React will usually ask to run on another port (for example `3001`). Type `Y` to confirm.
+- **Install fails due to old Node/npm**  
+  Upgrade Node.js to a current LTS release, then rerun `npm install`.
 
 ## Build for production
 
