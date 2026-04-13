@@ -62,6 +62,12 @@ Press `Ctrl + C` in the terminal running `npm start`.
   React will usually ask to run on another port (for example `3001`). Type `Y` to confirm.
 - **Install fails due to old Node/npm**  
   Upgrade Node.js to a current LTS release, then rerun `npm install`.
+- **Many `npm WARN deprecated` messages during install**  
+  Usually **not a blocker** for running this app. Most warnings come from transitive dependencies under `react-scripts@5` and do not always mean your own app code is broken.
+- **`npm audit` says vulnerabilities found**  
+  Start with `npm audit fix` (safe updates). Use `npm audit fix --force` only after testing because it may introduce breaking dependency changes.
+- **`npm audit` fails with `ENOLOCK`**  
+  Generate a lockfile first with `npm i --package-lock-only`, then rerun `npm audit`.
 
 ## Build for production
 
